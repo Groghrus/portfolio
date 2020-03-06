@@ -10,17 +10,33 @@
 :root {
   font-size: 10px;
 }
-a,
-button,
-li {
-  display: block;
-}
+
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  @include background();
   background: $primary-color;
   color: #fff;
+  height: 100%;
+  font-family: 'Segoe UI' , Arial, Helvetica, sans-serif;
+  line-height: 1.5;
 }
 
-
+h1,
+h2,
+h3 {
+font-weight: 400;
+  &.lg-heading{
+    font-size: 6rem;
+  }
+  &.sm-heading{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    padding: 0.2rem 1rem;
+    background: rgba(lighten($primary-color, 2), 0.5);
+  }
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
 
