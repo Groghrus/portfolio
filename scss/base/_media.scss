@@ -1,13 +1,23 @@
-/*
-@media (max-width:1200px) {
-  max-width: 970px;
+// widescreens
+
+@include mediaXl {
+
 }
-@media (max-width:992px) {
-  max-width: 750px;
+
+// desktops
+
+@include mediaLg {
+
 }
-@media (max-width:767px) { //на этом брекпойнте бурег-меню появляться должно
-  max-width: 650px;
+
+// tablets
+
+@include mediaMd {
+
 }
-@media (max-width:576px) {
-  max-width: none;
-}*/
+// smartphones
+
+@include mediaSm {
+
+
+}
