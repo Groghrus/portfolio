@@ -4,12 +4,13 @@
   transition: all 0.6s ease-out;
 }
 
-@mixin background{
+@mixin background {
   @if $show-home-image {
-    &#bg-img{
+    &#bg-img {
       background: $home-image;
       background-attachment: fixed;
       background-size: cover;
+
       &:after {
         content: '';
         position: absolute;
@@ -23,6 +24,7 @@
     }
   }
 }
+
 // Text color
 
 @function set-text-color($color) {
@@ -36,23 +38,25 @@
 // media query mixins
 
 @mixin mediaSm {
-  @media screen and (max-width:576px) {
+  @media screen and (max-width: 576px) {
     @content;
   }
 }
 
 @mixin mediaMd {
-  @media screen and (max-width:768px) {
+  @media screen and (max-width: 768px) {
     @content;
   }
 }
+
 @mixin mediaLg {
-  @media screen and (max-width:992px)  {
+  @media screen and (max-width: 992px) {
     @content;
   }
 }
+
 @mixin mediaXl {
-  @media screen and (max-width:2600px)  {
+  @media screen and (max-width: 2600px) {
     @content;
   }
 }
