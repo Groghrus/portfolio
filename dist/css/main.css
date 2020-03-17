@@ -4,7 +4,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  border: 0; }
+  border: 0;
+  outline: 0; }
 
 :root {
   font-size: 10px; }
@@ -44,6 +45,11 @@ h3 {
         font-size: 6rem;
         line-height: 1;
         margin-bottom: 4rem; } }
+    @media screen and (max-width: 576px) {
+      h1.lg-heading,
+      h2.lg-heading,
+      h3.lg-heading {
+        font-size: 3rem; } }
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading {
@@ -51,10 +57,32 @@ h3 {
     margin-bottom: 3rem;
     padding: 0.2rem 1rem;
     background: rgba(73, 73, 73, 0.5); }
+    @media screen and (max-width: 576px) {
+      h1.sm-heading,
+      h2.sm-heading,
+      h3.sm-heading {
+        font-size: 1.6rem; } }
 
 a {
   color: #fff;
   text-decoration: none; }
+
+.text-animation {
+  animation: textColor 2s ease infinite; }
+@keyframes textColor {
+  0% {
+    color: #8858ee; }
+  50% {
+    color: #0fffc1; }
+  100% {
+    color: #8858ee; } }
+  @media screen and (max-width: 768px) {
+    .text-animation {
+      font-size: 6rem;
+      line-height: 1; } }
+  @media screen and (max-width: 576px) {
+    .text-animation {
+      font-size: 3rem; } }
 
 header {
   position: fixed;
@@ -136,6 +164,10 @@ header {
         .menu-logo .portrait {
           width: 10rem;
           height: 10rem; } }
+      @media screen and (max-width: 576px) {
+        .menu-logo .portrait {
+          width: 7rem;
+          height: 7rem; } }
   .menu .nav-item {
     transform: translate3d(60rem, 0, 0);
     transition: all 0.6s ease-out; }
@@ -179,20 +211,6 @@ header {
   background: #2b2b2b;
   color: #fff;
   height: 6rem; }
-
-.text-animation {
-  animation: textColor 2s ease infinite; }
-@keyframes textColor {
-  0% {
-    color: #8858ee; }
-  50% {
-    color: #0fffc1; }
-  100% {
-    color: #8858ee; } }
-  @media screen and (max-width: 768px) {
-    .text-animation {
-      font-size: 6rem;
-      line-height: 1; } }
 
 .main {
   padding: 4rem;
@@ -296,10 +314,10 @@ header {
   display: block;
   padding: 1rem 2rem;
   margin: 0.5rem 0;
-  color: #c4c4c4;
+  color: #fff;
   font-size: 1.4rem;
   text-align: center;
-  border: 3px solid #c4c4c4;
+  border: 3px solid #fff;
   transition: color 150ms ease-in-out 150ms, border-color 300ms ease-out, box-shadow 300ms ease-in-out;
   z-index: 1; }
   .btn:after {
@@ -309,7 +327,7 @@ header {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: #2b2b2b;
+    background-color: #323232;
     z-index: -1;
     transform: scaleX(0);
     transition: transform 300ms ease-out 200ms; }
@@ -322,71 +340,87 @@ header {
       transform-origin: 50% 50%;
       transition: transform 300ms ease-out; }
 
-.boxes {
+form, input {
+  display: block; }
+
+.invalid {
+  color: #ff0006;
+  border-bottom: 3px solid #ff0006;
+  caret-color: #ff0006; }
+
+.valid {
+  color: #00d624;
+  border-bottom: 3px solid #00d624;
+  caret-color: #00d624; }
+
+.line-bottom {
+  color: #fff;
+  border-bottom: 3px solid transparent;
+  caret-color: #8858ee; }
+  .line-bottom:focus {
+    animation: PulseAttention 1.5s cubic-bezier(0.215, 0.61, 0.355, 1) forwards infinite; }
+@keyframes PulseAttention {
+  50% {
+    border-color: #8858ee; } }
+.contact__form {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
   align-items: center;
-  margin-top: 2rem;
-  padding: 3rem 0;
-  border: 3px solid #fff; }
-  @media screen and (max-width: 576px) {
-    .boxes {
-      border: none; } }
-  .boxes span {
-    color: #8858ee; }
-  .boxes-link {
-    font-size: 2rem;
-    padding: 1.5rem 2.5rem;
-    margin: 3rem 0; }
-    .boxes-link a:hover {
-      color: #777777; }
-  .boxes-social {
+  justify-content: left; }
+  @media screen and (max-width: 768px) {
+    .contact__form {
+      justify-content: center; } }
+  .contact__form .container {
+    display: flex;
+    flex-direction: column;
+    list-style: none; }
+  .contact__form-name {
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin: 3rem 0; }
-    .boxes-social a {
-      position: relative;
-      display: block;
-      width: 4.5rem;
-      height: 3.5rem;
-      padding-top: 0.8rem;
-      margin: 0 0.2rem;
-      color: #fff;
-      background: #919191;
-      border-radius: 4px;
-      text-align: center;
-      transition: all .5s; }
-      .boxes-social a:hover {
-        background: #5e5e5e; }
-        .boxes-social a:hover span {
-          bottom: 5rem;
-          visibility: visible;
-          opacity: 1; }
-      .boxes-social a span {
-        color: #666;
-        position: absolute;
-        bottom: 0;
-        left: -25px;
-        right: -25px;
-        padding: 3px 4px;
-        z-index: -1;
-        font-size: 1.2rem;
-        border-radius: 2px;
-        background: #fff;
-        visibility: hidden;
-        opacity: 0;
-        transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
-        .boxes-social a span:before {
-          content: '';
-          width: 0;
-          height: 0;
-          border-left: 5px solid transparent;
-          border-right: 5px solid transparent;
-          border-top: 5px solid #fff;
-          position: absolute;
-          bottom: -5px;
-          left: 40px; }
+    position: relative;
+    height: 5rem;
+    margin-bottom: 1.5rem; }
+    .contact__form-name .half-left {
+      margin-right: 0.5rem; }
+    .contact__form-name .half-right {
+      margin-left: 0.5rem; }
+  .contact__form-subject {
+    height: 5rem; }
+  .contact__form-subject, .contact__form-message {
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1.5rem; }
+  .contact__form input, .contact__form textarea {
+    margin: 1rem 0;
+    padding: 2rem;
+    width: 100%;
+    height: 100%;
+    background: #373737;
+    font-size: 1.6rem;
+    color: #fff; }
+  .contact__form .textarea__field {
+    resize: vertical;
+    min-height: 15rem;
+    overflow-y: hidden; }
+  .contact__form-submit {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%; }
+  .contact__form-button {
+    cursor: pointer;
+    text-decoration: none;
+    user-select: none;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #8858ee;
+    border: 2px solid #8858ee;
+    border-radius: 15%;
+    padding: 0.5rem 1rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-transform: uppercase; }
+    .contact__form-button:hover {
+      background: #8858ee;
+      color: #fff; }
 
 /*# sourceMappingURL=main.css.map */

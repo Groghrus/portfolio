@@ -1,21 +1,4 @@
-.text-animation {
-  animation: textColor 2s ease infinite;
-  @keyframes textColor {
-    0% {
-      color: $secondary-color;
-    }
-    50% {
-      color: #0fffc1;
-    }
-    100% {
-      color: $secondary-color;
-    }
-  }
-  @include mediaMd {
-    font-size: 6rem;
-    line-height: 1;
-  }
-}
+
 
 .main {
   padding: 4rem;
@@ -24,10 +7,8 @@
     align-items: center;
     text-align: center;
   }
-
   .icons {
     margin-top: 1rem;
-
     a {
       padding: 0.4rem;
       color: set-text-color($primary-color);

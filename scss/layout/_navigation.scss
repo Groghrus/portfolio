@@ -96,6 +96,10 @@
         width: 10rem;
         height: 10rem;
       }
+      @include mediaSm {
+        width: 7rem;
+        height: 7rem;
+      }
     }
   }
   .nav-item {
@@ -123,7 +127,6 @@
       font-size: 2.5rem;
       padding: 0.5rem 0;
     }
-
     &:hover {
       color: $secondary-color;
     }
