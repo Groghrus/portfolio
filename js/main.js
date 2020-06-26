@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-
     {
         // menu button
         const menuBtn = document.querySelector('.menu-btn');
