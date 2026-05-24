@@ -1,0 +1,21 @@
+@import "tailwindcss";
+@import "../styles/text.css";
+@import "../styles/shadcn-theme.css";
+@plugin "tailwindcss-animate";
+
+@layer base {
+    :root {
+        --font-stratos: var(--font-stratos);
+        --font-fira: var(--font-fira);
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 70px;
+}
+
+

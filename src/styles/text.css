@@ -1,0 +1,98 @@
+@layer utilities {
+    .text-h1 {
+        font-size: 48px;
+        line-height: 1.4;
+        font-weight: 700;
+        font-family: var(--font-stratos), sans-serif;
+    }
+    .text-h2 {
+        font-size: 38px;
+        line-height: 1.6;
+        font-weight: 700;
+        font-family: var(--font-stratos), sans-serif;
+    }
+    @media (min-width: 410px) {
+        .sm\:text-h2 { font-size: 8px; }
+    }
+    @media (min-width: 768px) {
+        .md\:text-h2 { font-size: 18px; }
+    }
+    @media (min-width: 1440px) {
+        .xl\:text-h2 { font-size: 28px; }
+    }
+    .text-h3 {
+        font-size: 32px;
+        line-height: 1.4;
+        font-weight: 700;
+        font-family: var(--font-stratos), sans-serif;
+    }
+    .text-h4 {
+        font-size: 24px;
+        line-height: 1.6;
+        font-weight: 700;
+        font-family: var(--font-stratos), sans-serif;
+    }
+    .text-h5 {
+        font-size: 18px;
+        line-height: 1.6;
+        font-weight: 700;
+        font-family: var(--font-stratos), sans-serif;
+    }
+    .text-h6 {
+        font-size: 14px;
+        line-height: 1.6;
+        font-weight: 700;
+        font-family: var(--font-stratos), sans-serif;
+    }
+
+    .text-body0 {
+        font-size: 14px;
+        line-height: 1.4;
+        font-weight: 400;
+        font-family: var(--font-fira), sans-serif;
+    }
+    .text-body1 {
+        font-size: 16px;
+        line-height: 1.6;
+        font-weight: 400;
+        font-family: var(--font-fira), sans-serif;
+    }
+    .text-body2 {
+        font-size: 20px;
+        line-height: 1.6;
+        font-weight: 400;
+        font-family: var(--font-fira), sans-serif;
+    }
+    .text-body3 {
+        font-size: 22px;
+        line-height: 1.6;
+        font-weight: 400;
+        font-family: var(--font-fira), sans-serif;
+    }
+    .text-body4 {
+        font-size: 24px;
+        line-height: 1.6;
+        font-weight: 400;
+        font-family: var(--font-fira), sans-serif;
+    }
+
+    .text-subtitle1 {
+        font-size: 16px;
+        line-height: 1.4;
+        font-weight: 400;
+        font-family: var(--font-fira), sans-serif;
+    }
+    .text-subtitle2 {
+        font-size: 20px;
+        line-height: 1.57;
+        font-weight: 400;
+        font-family: var(--font-fira), sans-serif;
+    }
+
+    .text-caption {
+        font-size: 12px;
+        line-height: 1;
+        font-weight: 400;
+        font-family: var(--font-fira), sans-serif;
+    }
+}
