@@ -41,7 +41,7 @@
     "zod": "^4.4.3"
   },
   "engines": {
-    "node": ">=20"
+    "node": "20.x"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
