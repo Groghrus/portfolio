@@ -136,7 +136,7 @@ export default function Hero() {
 
               <div className="pointer-events-auto mt-4 flex flex-wrap items-center gap-3 sm:mt-8">
                 <a
-                  href="/cv.pdf"
+                  href="/CV.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 rounded-xl border border-gray-300 bg-gray-100/80 px-5 py-2.5 text-sm font-semibold text-gray-800 backdrop-blur-sm transition hover:border-cyan-400 hover:bg-cyan-50 hover:text-cyan-700 dark:border-white/20 dark:bg-white/5 dark:text-white/90 dark:hover:border-cyan-300/45 dark:hover:bg-white/10 dark:hover:text-white"

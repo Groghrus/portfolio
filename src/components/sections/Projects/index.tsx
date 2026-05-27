@@ -116,12 +116,9 @@ export default function Projects() {
       className="relative w-full border-b border-border/40 px-4 py-16 sm:px-6 sm:py-24 lg:px-8"
     >
       <div className="mx-auto max-w-6xl">
-        <p className="mb-3 text-xs font-semibold tracking-widest text-cyan-400 dark:text-cyan-400 uppercase">
-          Проекты &amp; Опыт
-        </p>
 
         <h2 className="mb-8 text-3xl font-bold text-foreground sm:mb-12 sm:text-4xl lg:text-5xl">
-          Мои <span className="text-cyan-500 dark:text-cyan-400">проекты</span>
+            Опыт <span className="text-cyan-500 dark:text-cyan-400">работы</span>
         </h2>
 
         <div className="grid gap-4 sm:grid-cols-2 sm:gap-5 2xl:grid-cols-3">

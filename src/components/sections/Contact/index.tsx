@@ -2,7 +2,7 @@ export default function Contact() {
   return (
     <section id="contact" className="relative w-full px-6 py-12 sm:py-16 md:py-20 lg:px-8 lg:py-24">
       <div className="mx-auto max-w-6xl text-center">
-        <p className="mb-3 text-xs font-semibold tracking-widest text-cyan-400 dark:text-cyan-400 uppercase">
+        <p className="mb-3 text-2xl font-semibold tracking-widest text-cyan-400 dark:text-cyan-400 uppercase">
           Контакты
         </p>
 
