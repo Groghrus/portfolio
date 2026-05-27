@@ -1,28 +1,4 @@
-const techStack = [
-  "React",
-  "TypeScript",
-  "JavaScript",
-  "Next.js",
-  "Vue.js",
-  "Nuxt.js",
-  "Redux Toolkit",
-  "Vite",
-  "Webpack",
-  "Node.js",
-  "Express",
-  "PostgreSQL",
-  "Docker",
-  "REST API",
-  "WebSocket",
-  "MapLibre GL",
-  "Tailwind CSS",
-  "MUI",
-  "SCSS",
-  "HTML",
-  "CSS",
-  "Git",
-  "Figma",
-]
+import {techStack} from '@/components/sections/About/data';
 
 export default function About() {
   return (
