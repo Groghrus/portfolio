@@ -11,7 +11,6 @@ export default function PetProjects() {
         </h2>
 
         <div className="relative">
-          <div className="pointer-events-none select-none blur-sm">
             <div className="grid gap-4 sm:grid-cols-2 sm:gap-5 2xl:grid-cols-3">
               {petProjects.map((project) => (
                 <article
@@ -41,31 +40,20 @@ export default function PetProjects() {
 
                   <div className="mt-auto flex flex-wrap gap-2">
                     {project.deployUrl && (
-                      <span className="inline-flex items-center gap-1.5 rounded-lg border border-cyan-500/30 px-3 py-1.5 text-[11px] font-medium text-cyan-600 dark:text-cyan-300 sm:text-xs">
+                      <a href={project.deployUrl} target={'_blank'} className="inline-flex items-center gap-1.5 rounded-lg border border-cyan-500/30 px-3 py-1.5 text-[11px] font-medium text-cyan-600 dark:text-cyan-300 sm:text-xs">
                         <ExternalLink className="size-3" />
                         Демо
-                      </span>
+                      </a>
                     )}
-                    <span className="inline-flex items-center gap-1.5 rounded-lg border border-border/60 px-3 py-1.5 text-[11px] font-medium text-muted-foreground sm:text-xs">
+                    <a href={project.githubUrl} target={'_blank'} className="inline-flex items-center gap-1.5 rounded-lg border border-cyan-500/30 px-3 py-1.5 text-[11px] font-medium text-cyan-600 dark:text-cyan-300 sm:text-xs">
                       <Github className="size-3" />
                       GitHub
-                    </span>
+                    </a>
                   </div>
                 </article>
               ))}
             </div>
-          </div>
 
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="rounded-2xl border border-cyan-500/20 bg-background/80 px-6 py-4 text-center backdrop-blur-md sm:px-8 sm:py-5">
-              <p className="text-sm font-semibold text-foreground sm:text-base">
-                Раздел в разработке
-              </p>
-              <p className="mt-1 text-xs text-muted-foreground">
-                Проекты и примеры кода скоро появятся
-              </p>
-            </div>
-          </div>
         </div>
       </div>
     </section>

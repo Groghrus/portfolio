@@ -2,6 +2,8 @@
 
 Фронтенд-разработчик с 4+ годами опыта. React, TypeScript, Next.js.
 
+## [Портфолио](https://portfolio-kdv.vercel.app/) 
+
 ## Stack
 
 | Технология | Версия |
